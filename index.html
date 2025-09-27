@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard UI</title>
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard UI</h1>
+  </header>
+
+  <div class="container">
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <!-- Table -->
+    <h2>User Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Progress</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Amit</td>
+          <td>75%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Archit</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Dev</td>
+          <td>90%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Chart -->
+    <h2>Performance Chart</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- External JS link -->
+  <script src="script.js"></script>
+</body>
+</html>
